@@ -4,8 +4,20 @@ import { Image } from 'astro:assets';
 import logo from '../assets/logo.png'; // Assuming this is the 'solar nusantara' logo
 ---
 
-<Layout title="404 Not Found">
-  <div class="flex flex-col items-center justify-center min-h-[calc(100vh-theme(spacing.20)-theme(spacing.20))] px-4 py-16 text-center">
+<Layout
+  title="Halaman Tidak Ditemukan"
+  description="Halaman yang Anda cari tidak ditemukan di solar-nusantara.id. Kembali ke beranda untuk menelusuri layanan, produk, dan berita energi surya kami."
+>
+  {/*
+    Was `min-h-[calc(100vh-theme(spacing.20)-theme(spacing.20))]`. That is
+    Tailwind's `theme()` function, but this project builds with UnoCSS - see
+    astro.config.mjs, which loads `unocss/astro` and no Tailwind integration
+    (tailwind.config.mjs is a dead leftover; Tailwind is not even a dependency).
+    UnoCSS could not resolve `spacing.20` and failed the entire build with
+    "theme of spacing.20 did not found", so no page could be generated at all.
+    Tailwind's spacing.20 is 5rem, twice is 10rem - same result, no theme lookup.
+  */}
+  <div class="flex flex-col items-center justify-center min-h-[calc(100vh-10rem)] px-4 py-16 text-center">
     <Image 
       src={logo} 
       alt="Solar Nusantara Logo" 

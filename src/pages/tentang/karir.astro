@@ -16,7 +16,11 @@ const permanentStaff = [
 ];
 ---
 
-<Layout title="Karir - Solar Nusantara" ogImage="/images/og/karir.png">
+<Layout
+  title="Karir"
+  description="Peluang karir di Solar Nusantara, perusahaan EPC PLTS dan manajemen energi di Indonesia. Bergabunglah membangun transisi menuju Energi Baru Indonesia."
+  ogImage="/images/og/karir.png"
+>
   <div class="bg-gray-50">
     <!-- Hero Section -->
     <section class="container mx-auto px-6 py-20 text-center">
@@ -107,11 +111,23 @@ const permanentStaff = [
         <p class="text-gray-600 text-lg mb-8">
           Jika Anda memiliki semangat untuk energi terbarukan dan ingin membuat perbedaan, kami ingin mendengar dari Anda. Mohon isi formulir dan kirimkan CV Anda ke link Form berikut.
         </p>
+        {/*
+          WARNING, verified 2026-09-15: rekrutmen.solar-nusantara.id is
+          NXDOMAIN - there is no DNS record for that subdomain at all, so this
+          button fails with a browser-level "site can't be reached" for every
+          applicant who clicks it. This is the primary CTA on the careers page.
+
+          Left pointing here deliberately rather than silently rerouted to
+          WhatsApp, because where job applications go is a business decision.
+          The fix is one DNS record in Cloudflare for the `rekrutmen` subdomain
+          pointing at wherever the recruitment form is actually hosted. Until
+          that record exists, this link is dead.
+        */}
         <a href="https://rekrutmen.solar-nusantara.id" class="inline-block bg-blue-600 text-white font-bold text-lg py-4 px-10 rounded-lg hover:bg-blue-700 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300">
           Lamar Sekarang
         </a>
 		<p class="text-gray-500 text-base mt-4">
-			atau hubungi kami via WhatsApp di <a href="http://wa.me/+6282170000575" class="text-blue-600 hover:underline" target="_blank">+62 821-7000-0575</a>
+			atau hubungi kami via WhatsApp di <a href="https://wa.me/6282170000575" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">+62 821-7000-0575</a>
 		  </p>
       </div>
     </section>

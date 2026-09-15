@@ -1,7 +1,10 @@
 export const SITE_CONFIG = {
     title: 'Solar Nusantara',
     tagline: 'ENERGI BARU INDONESIA',
-    description: 'Solar Nusantara menyediakan solusi energi surya terdepan untuk perumahan, komersial, dan industri. Wujudkanmasa depan Indonesia dengan energi bersih.',
+    // "Wujudkan masa" was written "Wujudkanmasa" until 2026-09-15. This string
+    // is the site-wide meta description, so the typo was rendering in the
+    // search snippet on every page.
+    description: 'Solar Nusantara menyediakan solusi energi surya terdepan untuk perumahan, komersial, dan industri. Wujudkan masa depan Indonesia dengan energi bersih.',
     url: 'https://solar-nusantara.id',
     logo: {
       src: '/src/assets/logo.png',

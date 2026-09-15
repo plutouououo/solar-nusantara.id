@@ -1,0 +1,20 @@
+---
+/**
+ * Hub page for /tentang.
+ *
+ * navLinks.ts gives this section an href, so the site-wide navigation linked
+ * here from every page - but no route existed and the link 404'd on all 128
+ * pages. /layanan already had src/pages/layanan.astro; this mirrors it exactly
+ * rather than inventing a second pattern.
+ */
+import Layout from '../layouts/Layout.astro';
+import IntroPageMenu from '../components/IntroPageMenu.astro';
+import { navLinks } from '../data/navLinks';
+
+const pageData = navLinks.find(link => link.href === '/tentang');
+const title = pageData?.text || 'tentang';
+const menuItems = pageData?.children;
+---
+<Layout title={title} description="Tentang PT Tripower Solar Nusantara: visi dan misi, nilai Sonusian, tim, mitra kolaborasi, kebijakan K3L, dan ekosistem digital SonusHUB.">
+  <IntroPageMenu title={title} items={menuItems} />
+</Layout>
