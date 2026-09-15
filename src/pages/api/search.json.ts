@@ -1,6 +1,6 @@
 
 import type { APIRoute } from 'astro';
-import { getCollection } from 'astro:content';
+import { getPublishedArticles } from '../../utils/articles';
 import { navLinks, type NavLink } from '../../data/navLinks';
 
 interface SearchItem {
@@ -27,10 +27,14 @@ export const GET: APIRoute = async ({ params, request }) => {
   const pageLinks = flattenNavLinks(navLinks);
 
   // 2. Ambil data dari koleksi berita
-  const posts = await getCollection('berita');
+  // Draft articles must not show up in search. The trailing slash matters:
+  // every other link on the site points at /berita/<slug>/, and GitHub Pages
+  // 301s the slashless form, so omitting it sent every search result through a
+  // redirect.
+  const posts = await getPublishedArticles();
   const postLinks: SearchItem[] = posts.map(post => ({
     title: post.data.title,
-    url: `/berita/${post.slug}`
+    url: `/berita/${post.slug}/`
   }));
 
   // 3. Gabungkan semua data menjadi satu array

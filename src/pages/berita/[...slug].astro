@@ -1,18 +1,24 @@
 ---
-import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import { Image } from 'astro:assets';
+import { SITE_CONFIG } from '../../config';
+import { buildArticleSchema } from '../../utils/articleSchema';
+import { getPublishedArticles, getRelatedArticles, hasMath, type Article } from '../../utils/articles';
+import RelatedArticles from '../../components/RelatedArticles.astro';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('berita');
+  const posts = await getPublishedArticles();
   return posts.map(post => ({
     params: { slug: post.slug },
-    props: post,
+    // Related links are resolved here, at build time, because this is the only
+    // place with the whole collection in hand. The page itself never re-reads
+    // the collection.
+    props: { post, related: getRelatedArticles(post, posts, 3) },
   }));
 }
-type Props = Awaited<ReturnType<typeof getStaticPaths>>[number]['props'];
+type Props = { post: Article; related: Article[] };
 
-const post = Astro.props;
+const { post, related } = Astro.props;
 const { Content, headings } = await post.render();
 
 // Calculate reading time
@@ -23,20 +29,54 @@ const readingTime = Math.ceil(wordCount / wordsPerMinute);
 // Pass frontmatter and headings to the main layout so it can render the TOC
 const frontmatter = {
   title: post.data.title,
+  seoTitle: post.data.seoTitle,
   description: post.data.description,
   heroImage: post.data.heroImage,
-  author: post.data.author,
-  authorUrl: post.data.authorUrl,
+  pubDate: post.data.pubDate,
+  updatedDate: post.data.updatedDate,
 };
+
+// ARTICLE STRUCTURED DATA
+//
+// Until 2026-09-15 an article page shipped only the site-wide Organization
+// graph from Layout - no Article node at all, so none of the posts were even
+// eligible for article rich results and none carried an author or a publish
+// date that Google could read. With ~1000 articles planned, this has to come
+// from one helper rather than per-file markup.
+const baseUrl = Astro.site ? Astro.site.origin : SITE_CONFIG.url;
+const canonicalUrl = new URL(Astro.url.pathname, baseUrl).href;
+const heroImageUrl = post.data.heroImage?.src
+  ? new URL(post.data.heroImage.src, baseUrl).href
+  : undefined;
+
+const jsonLd = buildArticleSchema({
+  url: canonicalUrl,
+  baseUrl,
+  title: post.data.title,
+  description: post.data.description,
+  imageUrl: heroImageUrl,
+  datePublished: post.data.pubDate,
+  dateModified: post.data.updatedDate,
+  authorName: post.data.author,
+  authorUrl: post.data.authorUrl,
+  wordCount,
+});
 ---
 
-<Layout frontmatter={frontmatter} headings={headings}>
+<Layout
+  frontmatter={frontmatter}
+  headings={headings}
+  jsonLd={jsonLd}
+  needsKatex={hasMath(post.body)}
+>
 
   <div class="text-lg text-gray-500 -mt-8 mb-8 flex flex-wrap items-center gap-x-2">
-    <span class="whitespace-nowrap">{post.data.pubDate.toLocaleDateString('id-ID', { year: 'numeric', month: 'short', day: 'numeric' })}</span>
+    <time datetime={post.data.pubDate.toISOString()} class="whitespace-nowrap">
+      {post.data.pubDate.toLocaleDateString('id-ID', { year: 'numeric', month: 'short', day: 'numeric' })}
+    </time>
     {post.data.author && (
       <span class="whitespace-nowrap">
-        <span class="text-gray-400">•</span>
+        <span class="text-gray-400">&bull;</span>
         {post.data.authorUrl ? (
           <>
             <span>Oleh </span>
@@ -50,7 +90,7 @@ const frontmatter = {
       </span>
     )}
     <span class="whitespace-nowrap">
-      <span class="text-gray-400">•</span>
+      <span class="text-gray-400">&bull;</span>
       <span>{readingTime} menit baca</span>
     </span>
   </div>
@@ -69,5 +109,7 @@ const frontmatter = {
   )}
   
   <Content />
+
+  <RelatedArticles posts={related} />
 
 </Layout>

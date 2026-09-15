@@ -1,0 +1,59 @@
+---
+/**
+ * Internal links out of an article.
+ *
+ * Not decoration. With 1000 articles behind a 6-per-page listing, anything
+ * older than the first few pages is reachable only by clicking "next" dozens
+ * of times, which is how archives end up with most of their pages effectively
+ * orphaned. Three contextual links per article turn a flat list into a graph
+ * that a crawler can actually traverse, and pass link equity between related
+ * topics instead of dead-ending it.
+ */
+import { Image } from 'astro:assets';
+import type { Article } from '../utils/articles';
+
+interface Props {
+	posts: Article[];
+}
+
+const { posts } = Astro.props;
+---
+
+{posts.length > 0 && (
+	<aside class="not-prose mt-16 pt-10 border-t border-gray-200" aria-labelledby="related-heading">
+		<h2 id="related-heading" class="text-2xl font-bold text-gray-900 mb-6">Artikel Terkait</h2>
+		<ul class="grid grid-cols-1 sm:grid-cols-3 gap-6 list-none p-0 m-0">
+			{posts.map((post) => (
+				<li class="m-0">
+					<a href={`/berita/${post.slug}/`} class="group block h-full">
+						<article class="h-full flex flex-col">
+							{post.data.heroImage && (
+								<Image
+									src={post.data.heroImage}
+									alt={post.data.heroImageAlt ?? post.data.title}
+									width={400}
+									height={225}
+									class="w-full h-auto object-cover rounded-lg mb-3"
+									loading="lazy"
+								/>
+							)}
+							<h3 class="text-base font-semibold text-gray-900 group-hover:text-blue-700 transition-colors leading-snug">
+								{post.data.title}
+							</h3>
+							<time
+								datetime={post.data.pubDate.toISOString()}
+								class="mt-2 text-sm text-gray-500"
+							>
+								{post.data.pubDate.toLocaleDateString('id-ID', {
+									year: 'numeric',
+									month: 'long',
+									day: 'numeric',
+								})}
+							</time>
+						</article>
+					</a>
+				</li>
+			))}
+		</ul>
+	</aside>
+)}

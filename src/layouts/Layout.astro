@@ -16,25 +16,92 @@ interface Props {
   headings?: Heading[];
   frontmatter?: {
     title: string;
+    /**
+     * Short title for <title> and og:title only. The <h1> always uses `title`.
+     * Google truncates the SERP title around 60 characters, but an on-page
+     * heading should stay descriptive - so they are two fields, not one
+     * compromise string. 7 of the 18 existing articles have a title past 60.
+     */
+    seoTitle?: string;
     description?: string;
     heroImage?: any;
+    pubDate?: Date;
+    updatedDate?: Date;
   };
   title?: string;
+  /**
+   * Meta description for .astro pages, which have no frontmatter to read one
+   * from. Without it the page falls back to the site-wide description - and 50
+   * of the 70 built pages were doing exactly that, sharing one identical
+   * <meta name="description"> between them.
+   */
+  description?: string;
   ogImage?: string; // New prop for Astro pages
+  /**
+   * Load the KaTeX stylesheet for this page. Off by default.
+   *
+   * It used to be unconditional: a render-blocking cross-origin stylesheet on
+   * all 66 pages, when exactly 3 of them contain any math. The article route
+   * sets this by scanning the body for math delimiters, so no author has to
+   * remember it.
+   */
+  needsKatex?: boolean;
+  /**
+   * Extra schema.org nodes to merge into this page's single @graph.
+   *
+   * Pages MUST pass their page-level schema here rather than rendering a second
+   * <script type="application/ld+json"> of their own. Two competing graphs on
+   * one page give Google two descriptions of the same thing; one graph whose
+   * nodes reference each other by @id gives it one. Article nodes should point
+   * at `${baseUrl}/#organization` and `${baseUrl}/#website` instead of
+   * redefining the publisher inline.
+   */
+  jsonLd?: Record<string, unknown>[];
 }
 
-const { headings, frontmatter, title: directTitle, ogImage } = Astro.props;
+const { headings, frontmatter, title: directTitle, description: directDescription, ogImage, jsonLd = [], needsKatex = false } = Astro.props;
+
+// Canonical origin + path only, deliberately dropping any querystring or hash.
+// Derived from `site` in astro.config.mjs (exposed as import.meta.env.SITE) so
+// it cannot drift from the configured domain. Used for <link rel="canonical">,
+// og:url and twitter:url alike - those three must agree.
+const canonicalUrl = new URL(
+	Astro.url.pathname,
+	import.meta.env.SITE ?? SITE_CONFIG.url,
+).href;
 
 // This is the key change: Detect if the page is from Markdown based on `frontmatter`
 const isMarkdownPage = !!frontmatter;
 
 // Determine title and description based on page type
+// `title` is the on-page <h1>. `pageTitle` is what search engines and social
+// cards show. They are deliberately allowed to differ.
 const title = isMarkdownPage ? frontmatter.title : directTitle || SITE_CONFIG.title;
-const description = frontmatter?.description || SITE_CONFIG.description;
 
-// Determine Open Graph image
+const BRAND = SITE_CONFIG.title;
+const SERP_TITLE_MAX = 60;
+const BRAND_SUFFIX = ` | ${BRAND}`;
+const rawPageTitle = (isMarkdownPage ? frontmatter.seoTitle || frontmatter.title : directTitle) || BRAND;
+// The brand suffix is appended only when it fits.
+//
+// Two reasons to skip it: the title already names the brand (so the homepage
+// does not render "Solar Nusantara | Solar Nusantara"), or appending it would
+// push the title past what Google shows. A suffix that gets truncated costs
+// characters of real title and buys nothing, so the page keeps the bare title.
+const pageTitle =
+	rawPageTitle.includes(BRAND) ||
+	rawPageTitle.length + BRAND_SUFFIX.length > SERP_TITLE_MAX
+		? rawPageTitle
+		: rawPageTitle + BRAND_SUFFIX;
+
+const description = frontmatter?.description || directDescription || SITE_CONFIG.description;
+
+// Determine Open Graph image.
+// Resolved against the canonical URL, not Astro.url: Astro.url carries the
+// querystring, and a relative image source would otherwise resolve against the
+// current path rather than the site root.
 const imageSrc = ogImage || frontmatter?.heroImage?.src || '/meta.png';
-const ogImageUrl = new URL(imageSrc, Astro.url).href;
+const ogImageUrl = new URL(imageSrc, canonicalUrl).href;
 
 const hasHeadings = headings && headings.length > 0;
 
@@ -133,40 +200,89 @@ const structuredData = {
         "https://youtube.com/@farrosfr",
         "https://instagram.com/farrosfr"
       ]
-    }
+    },
+    // Page-level nodes supplied via the `jsonLd` prop (Article, BreadcrumbList,
+    // FAQPage, ...). Merged into THIS graph on purpose so the page emits one
+    // script tag, and so those nodes can reference #organization / #website by
+    // @id instead of restating the publisher.
+    ...jsonLd,
   ]
 };
 ---
 
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<!--
+	lang was "en" until 2026-09-15 while every string the site ships is
+	Indonesian - the tagline, the meta description, the navigation, the page
+	copy. Declaring the wrong content language misleads search engines about
+	which locale to serve the page to, and makes screen readers pronounce
+	Indonesian text with English phonetics.
+-->
+<html lang="id" class="scroll-smooth">
 	<head>
 		<meta charset="UTF-8" />
-		<title>{title}</title>
+		<title>{pageTitle}</title>
 
 		<!-- Primary Meta Tags -->
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="canonical" href={Astro.url.href} />
+		{/*
+			Canonical is built from the configured `site` plus the pathname only.
+			It used to be `Astro.url.href`, which carries the querystring and hash,
+			so every campaign link (?utm_source=..., ?fbclid=...) self-declared a
+			different canonical URL and split the signal for the same page.
+		*/}
+		<link rel="canonical" href={canonicalUrl} />
 		<meta name="description" content={description} />
 		<meta name="generator" content={Astro.generator} />
 
 		<!-- Open Graph / Facebook -->
 		<meta property="og:type" content={isMarkdownPage ? 'article' : 'website'}>
-		<meta property="og:url" content={Astro.url} />
-		<meta property="og:title" content={title} />
+		<meta property="og:site_name" content={BRAND} />
+		<meta property="og:locale" content="id_ID" />
+		<meta property="og:url" content={canonicalUrl} />
+		<meta property="og:title" content={pageTitle} />
 		<meta property="og:description" content={description} />
 		<meta property="og:image" content={ogImageUrl} />
+		<meta property="og:image:alt" content={description} />
+		{isMarkdownPage && frontmatter.pubDate && (
+			<meta property="article:published_time" content={frontmatter.pubDate.toISOString()} />
+		)}
+		{isMarkdownPage && frontmatter.updatedDate && (
+			<meta property="article:modified_time" content={frontmatter.updatedDate.toISOString()} />
+		)}
 
 		<!-- Twitter -->
 		<meta property="twitter:card" content="summary_large_image" />
-		<meta property="twitter:url" content={Astro.url} />
-		<meta property="twitter:title" content={title} />
+		<meta property="twitter:url" content={canonicalUrl} />
+		<meta property="twitter:title" content={pageTitle} />
 		<meta property="twitter:description" content={description} />
 		<meta name="twitter:image" content={ogImageUrl} />
+		<meta name="twitter:image:alt" content={description} />
 
-		<!-- KaTeX CSS for math formulas -->
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css" integrity="sha384-zh0CIuu+PnAe8mreGmxaC5YG8F4D0X94s4H/pTToz4fS2u1Tq2Vl/V1+72k6J4G8" crossorigin="anonymous">
+		{/*
+			KaTeX CSS, loaded only on pages that actually contain math.
+
+			The integrity hash here was wrong until 2026-09-15. It read
+			`sha384-zh0CIuu+PnAe8mreGmxaC5YG8F4D0X94s4H/pTToz4fS2u1Tq2Vl/V1+72k6J4G8`
+			while the file jsDelivr serves for katex@0.16.21 hashes to
+			`sha384-zh0CIslj+VczCZtlzBcjt5ppRcsAmDnRem7ESsYwWwg3m/OaJ2l4x7YBZl9Kxxib`
+			(verified by downloading it and running openssl dgst -sha384). Only the
+			first few characters matched. Subresource Integrity is fail-closed, so
+			the browser refused to apply the stylesheet on every page and the three
+			articles with formulas rendered their math unstyled.
+
+			If the pinned version is ever bumped, recompute the hash - do not edit
+			the version and keep the old digest.
+		*/}
+		{needsKatex && (
+			<link
+				rel="stylesheet"
+				href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css"
+				integrity="sha384-zh0CIslj+VczCZtlzBcjt5ppRcsAmDnRem7ESsYwWwg3m/OaJ2l4x7YBZl9Kxxib"
+				crossorigin="anonymous"
+			/>
+		)}
 
 		<!-- Structured Data -->
 

@@ -4,7 +4,7 @@ import { Image } from 'astro:assets';
 import footerLogo from '../assets/footer-logo.png';
 import isoImage from '../assets/iso.png';
 import { navLinks, type NavLink } from '../data/navLinks';
-import { getCollection } from 'astro:content';
+import { getPublishedArticles } from '../utils/articles';
 
 // --- Logic for Nav Links ---
 function getFooterLinks(mainCategoryText: string): NavLink[] {
@@ -17,8 +17,9 @@ const footerLayananLinks = getFooterLinks("Layanan");
 const footerProdukLinks = getFooterLinks("Produk");
 
 // --- Logic for Latest News ---
-const posts = await getCollection('berita');
-const latestPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()).slice(0, 4);
+// getPublishedArticles() already excludes drafts and sorts newest first, so
+// the footer cannot disagree with /berita/ about what the latest posts are.
+const latestPosts = (await getPublishedArticles()).slice(0, 4);
 ---
 
 <footer class="bg-gray-900 text-gray-200 py-12">

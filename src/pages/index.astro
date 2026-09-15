@@ -12,10 +12,9 @@ import ProductCarousel from '../components/ProductCarousel.astro';
 import energiTerbarukanIcon from '../assets/icons/energi-baru.svg?raw';
 import manajemenEnergiIcon from '../assets/icons/manajemen-energi.svg?raw';
 import biomassIcon from '../assets/icons/biomass.svg?raw';
-import { getCollection } from 'astro:content';
+import { getPublishedArticles } from '../utils/articles';
 
-const posts = await getCollection('berita');
-const latestPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()).slice(0, 2);
+const latestPosts = (await getPublishedArticles()).slice(0, 2);
 
 const energiTerbarukanStats = [
   { iconPath: energiTerbarukanIcon, value: "17", title: "Proyek yang sedang Berjalan" },
@@ -64,7 +63,10 @@ const products = [
 ];
 ---
 
-<Layout title="Solar Nusantara - Energi Baru Indonesia">
+<Layout
+  title="Solar Nusantara - Energi Baru Indonesia"
+  description="PT Tripower Solar Nusantara: EPC PLTS, manajemen energi, dan produk panel surya untuk kebutuhan residensial, komersial, dan industri di Indonesia."
+>
 	<HeroSection />
 	<main>
 		<AboutIntro />

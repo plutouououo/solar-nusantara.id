@@ -7,6 +7,6 @@ const pageData = navLinks.find(link => link.href === '/layanan');
 const title = pageData?.text || 'Layanan';
 const menuItems = pageData?.children;
 ---
-<Layout title={title}>
+<Layout title={title} description="Layanan Solar Nusantara: EPC sistem tenaga surya untuk segmen C&I, SHS, dan PJUTS, serta manajemen energi dari pemantauan sampai otomasi bangunan.">
   <IntroPageMenu title={title} items={menuItems} />
 </Layout>
