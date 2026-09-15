@@ -1,6 +1,6 @@
 ---
-layout: ../../../layouts/Layout.astro
 title: "Segmen SHS"
+description: "Layanan EPC Solar Home System dari SONUS untuk kebutuhan listrik rumah tangga dan daerah yang belum terjangkau jaringan PLN."
 ---
 
 <div class="slider-with-nav">

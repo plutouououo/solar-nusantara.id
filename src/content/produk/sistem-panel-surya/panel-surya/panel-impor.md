@@ -1,6 +1,6 @@
 ---
-layout: ../../../../layouts/Layout.astro
 title: "Panel Impor"
+description: "Panel surya impor dari pemasok terpercaya yang dikurasi SONUS, melengkapi produksi sendiri agar pilihan spesifikasi sesuai kebutuhan tiap proyek."
 ---
 
 ![alt text](_image-1.png)

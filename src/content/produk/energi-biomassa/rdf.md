@@ -1,6 +1,6 @@
 ---
-layout: ../../../layouts/Layout.astro
 title: "RDF"
+description: "Refuse-Derived Fuel (RDF) mengubah sampah padat perkotaan menjadi bahan bakar pengganti fosil untuk kiln semen, pembangkit listrik, dan boiler industri."
 ---
 ![alt text](_image-3.png)
 

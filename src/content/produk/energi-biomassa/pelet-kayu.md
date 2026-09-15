@@ -1,6 +1,6 @@
 ---
-layout: ../../../layouts/Layout.astro
 title: "Pelet Kayu"
+description: "Pelet kayu dari limbah kayu terkompresi: bahan bakar biomassa terbarukan dengan emisi karbon rendah dan efisiensi lebih tinggi dari kayu gelondongan."
 ---
 ![alt text](_image.png)
 

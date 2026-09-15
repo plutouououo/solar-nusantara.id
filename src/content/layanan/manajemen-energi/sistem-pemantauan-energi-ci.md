@@ -1,6 +1,6 @@
 ---
-layout: ../../../layouts/Layout.astro
 title: "Sistem Pemantauan Energi untuk C&I"
+description: "Sistem pemantauan energi SONUS untuk sektor komersial dan industri: memantau, mengendalikan, dan mengoptimalkan konsumsi energi perusahaan."
 ---
 ![alt text](_image.png)
 Selamat datang di SONUS, perusahaan manajemen energi terkemuka yang menyediakan solusi inovatif untuk membantu bisnis dan industri mengoptimalkan penggunaan energi mereka. Misi kami adalah memberikan dampak positif bagi lingkungan dengan mengurangi emisi karbon dan meningkatkan efisiensi energi.

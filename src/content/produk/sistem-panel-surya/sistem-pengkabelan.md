@@ -1,6 +1,6 @@
 ---
-layout: ../../../layouts/Layout.astro
 title: "Sistem Pengkabelan"
+description: "Kabel surya konduktor tembaga single-core dan multi-core berlapis PVC dari SONUS, tersedia tipe bundar dan pipih untuk instalasi permanen."
 ---
 ![alt text](_image-1.png)
 

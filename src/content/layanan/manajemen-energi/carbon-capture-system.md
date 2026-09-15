@@ -1,6 +1,6 @@
 ---
-layout: ../../../layouts/Layout.astro
 title: "Sistem Penangkapan Karbon"
+description: "Sistem penangkapan karbon SONUS menangkap dan menyimpan emisi CO2 industri, dirancang khusus mengikuti profil emisi masing-masing klien."
 ---
 ![alt text](_image-4.png)
 

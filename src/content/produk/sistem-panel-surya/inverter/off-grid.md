@@ -1,6 +1,6 @@
 ---
-layout: ../../../../layouts/Layout.astro
 title: "Inverter Off-Grid"
+description: "Inverter off-grid SONUS untuk sistem panel surya mandiri tanpa jaringan PLN, kompatibel dengan beragam jenis panel surya dan sistem baterai."
 ---
 ![alt text](_image-1.png)
 Sonus menghadirkan produk unggulan melalui Off-Grid Inverter untuk Sistem Panel Surya. Teknologi inovatif ini memungkinkan pelanggan memiliki sumber energi berkelanjutan yang tidak bergantung pada jaringan listrik konvensional. Off-grid inverter tersebut dirancang dengan fitur-fitur canggih untuk memaksimalkan efisiensi dan keandalan energi, sehingga mampu menyediakan suplai daya yang stabil dan tidak terputus. Produk ini juga dilengkapi fitur keselamatan yang melindungi sistem dari beban berlebih serta gangguan listrik lainnya.

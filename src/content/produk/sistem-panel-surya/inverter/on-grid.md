@@ -1,6 +1,6 @@
 ---
-layout: ../../../../layouts/Layout.astro
 title: "Inverter On-Grid"
+description: "Inverter on-grid SONUS mengalirkan kelebihan daya panel surya kembali ke jaringan listrik, sehingga pengguna memperoleh kredit pada tagihan listrik."
 ---
 ![alt text](_image.png)
 Sistem Panel Surya dengan Inverter dan On Grid Inverter dari SONUS merupakan solusi energi terbarukan kelas atas yang menawarkan cara yang efisien dan hemat biaya untuk menghasilkan listrik dari cahaya matahari. Panel surya dibuat menggunakan sel surya berkualitas terbaik yang dirancang untuk menyerap energi matahari semaksimal mungkin. Inverter dan on grid inverter dilengkapi teknologi canggih yang mengubah daya DC yang dihasilkan panel surya menjadi daya AC yang dapat digunakan di rumah, bisnis, dan berbagai aplikasi lainnya.

@@ -1,6 +1,6 @@
 ---
-layout: ../../../layouts/Layout.astro
 title: "Mitra Bisnis"
+description: "SONUS berkolaborasi dengan produsen dan distributor terkemuka agar pelanggan memperoleh akses ke panel surya, inverter, dan teknologi surya terbaru."
 ---
 
 ![alt text](_image-1.png)

@@ -1,6 +1,6 @@
 ---
-layout: ../../../layouts/Layout.astro
 title: "Mitra Suplier"
+description: "Mitra pemasok SONUS dipilih berdasarkan keahlian, pengalaman, dan komitmen keberlanjutan, untuk menjamin mutu bahan dan komponen panel surya."
 ---
 
 ![alt text](_image.png)

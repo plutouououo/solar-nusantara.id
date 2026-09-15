@@ -1,6 +1,6 @@
 ---
-layout: ../../../layouts/Layout.astro
 title: "Sistem Otomasi Bangunan"
+description: "EMAS dan BAS dari SONUS: pemantauan energi real-time plus otomasi pencahayaan dan suhu untuk menurunkan konsumsi dan biaya perawatan bangunan."
 ---
 ![alt text](_image-1.png)
 

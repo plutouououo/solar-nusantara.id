@@ -3,6 +3,9 @@ title: "Cara Menghitung Konsumsi Energi Listrik (kWh)"
 pubDate: "2026-03-09"
 description: "Hubungan antara daya, waktu penggunaan, dan energi listrik untuk analisis konsumsi tahunan serta efisiensi pada sistem kelistrikan"
 heroImage: "./1.webp"
+heroImageAlt: "Infografis perhitungan kWh: lampu 75 watt dibagi 1000 menjadi 0,075 kW, dikalikan 4 jam pemakaian menghasilkan 0,3 kWh pada meteran listrik"
+focusKeyphrase: "cara menghitung konsumsi listrik kwh"
+tags: ["perhitungan", "efisiensi-energi"]
 ---
 
 Dalam analisis energi pada bangunan, fasilitas komersial, maupun perencanaan sistem tenaga surya, estimasi konsumsi listrik menjadi bagian dari evaluasi penggunaan energi.

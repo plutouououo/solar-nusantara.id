@@ -1,6 +1,6 @@
 ---
-layout: ../../../layouts/Layout.astro
 title: "Sistem Manajemen Armada"
+description: "Sistem manajemen armada SONUS memberi visibilitas digital atas operasional forklift, menekan biaya dan waktu operasi lewat data yang terukur."
 ---
 ![alt text](_image-2.png)
 

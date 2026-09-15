@@ -5,6 +5,9 @@ description: "Energi surya tidak hanya mendukung transisi energi, tetapi juga me
 heroImage: "./image.jpg"
 author: "Farros"
 authorUrl: "https://farros.co"
+heroImageAlt: "Ilustrasi dua turbin angin dan deretan panel surya di atas lahan hijau dengan matahari di latar belakang"
+focusKeyphrase: "dampak panel surya terhadap ekosistem"
+tags: ["lingkungan", "panel-surya"]
 ---
 Selama ini, panel surya dikenal sebagai solusi energi bersih untuk mengurangi emisi karbon. Namun, riset terbaru menunjukkan bahwa dampak pembangkit listrik tenaga surya bisa melampaui produksi energi, terutama ketika dibangun di wilayah kering seperti gurun.
 

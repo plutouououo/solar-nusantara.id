@@ -4,6 +4,8 @@ pubDate: "2026-03-10"
 description: "Metode menghitung produksi energi PLTS dari peak sun hours, efisiensi sistem, dan ukuran array untuk estimasi output listrik tahunan."
 heroImage: "./1.webp"
 heroImageAlt: "AI Generated Image"
+focusKeyphrase: "produksi energi plts tahunan"
+tags: ["perhitungan", "plts"]
 ---
 Dalam perencanaan sistem **Pembangkit Listrik Tenaga Surya (PLTS)**, estimasi produksi energi tahunan menjadi salah satu parameter utama untuk menentukan ukuran sistem yang tepat. Perhitungan ini biasanya melibatkan tiga variabel utama: **peak sun hours (PSH)**, **kapasitas sistem (kW)**, dan **efisiensi sistem**.
 

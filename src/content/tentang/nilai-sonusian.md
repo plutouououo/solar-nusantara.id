@@ -1,6 +1,6 @@
 ---
-layout: ../../layouts/Layout.astro
 title: "Nilai Sonusian"
+description: "Nilai Sonusian adalah prinsip kerja Solar Nusantara: panel surya bermutu, layanan yang dapat diandalkan, dan sistem yang dirancang bertahan lama."
 ---
 
 ## Dapat Diandalkan (Dependable)

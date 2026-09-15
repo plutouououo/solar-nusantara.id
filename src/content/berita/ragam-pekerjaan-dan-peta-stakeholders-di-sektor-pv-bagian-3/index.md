@@ -1,10 +1,14 @@
 ---
 title: "Ragam Pekerjaan dan Peta Stakeholders di Sektor PV | Bagian 3"
 pubDate: "2024-9-25"
-description: "Pelatihan, Perusahaan Utilitas, dan Kebutuhan Tenaga Kerja"
+description: "Peta stakeholders sektor PV bagian 3: lembaga pelatihan, perusahaan utilitas, dan kebutuhan tenaga kerja yang tumbuh di sektor fotovoltaik."
 heroImage: "./image8.png"
 author: "Farros"
 authorUrl: "https://farros.co"
+heroImageAlt: "Foto panel surya terpasang di atap genteng dengan langit biru berawan"
+seoTitle: "Peta Stakeholders Sektor PV Bagian 3: Tenaga Kerja"
+focusKeyphrase: "kebutuhan tenaga kerja sektor pv"
+tags: ["industri-pv", "karier"]
 ---
 ## Pendahuluan
 

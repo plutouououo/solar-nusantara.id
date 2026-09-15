@@ -5,6 +5,9 @@ description: "Bagaimana efisiensi sel surya meningkat dari 1970-an hingga kini? 
 heroImage: "./a.jpg"
 author: "Farros"
 authorUrl: "https://farros.co"
+heroImageAlt: "Ilustrasi panel surya bertiang tunggal dengan matahari bersinar di sampingnya"
+focusKeyphrase: "efisiensi sel surya nrel"
+tags: ["fotovoltaik", "riset"]
 ---
 
 Selama beberapa dekade terakhir, teknologi sel surya mengalami peningkatan efisiensi yang luar biasa. Jika pada tahun 1970-an efisiensinya masih di bawah 10%, kini beberapa teknologi telah menembus angka di atas 45% di laboratorium.

@@ -1,6 +1,6 @@
 ---
-layout: ../../layouts/Layout.astro
 title: "Manajemen Energi"
+description: "Solusi manajemen energi SONUS untuk menekan biaya operasional: pemantauan energi, otomasi bangunan, manajemen armada, dan penangkapan karbon."
 ---
 SONUS menyediakan solusi manajemen energi komprehensif untuk membantu bisnis dan individu mengoptimalkan penggunaan energi, mengurangi biaya operasional, dan berkontribusi pada keberlanjutan lingkungan. Kami memahami tantangan energi yang beragam dan menawarkan berbagai layanan inovatif yang dirancang untuk memenuhi kebutuhan spesifik Anda.
 

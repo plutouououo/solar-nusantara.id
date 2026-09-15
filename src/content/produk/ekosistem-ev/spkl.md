@@ -1,6 +1,6 @@
 ---
-layout: ../../../layouts/Layout.astro
 title: "SPKL | PENGISIAN DAYA EV"
+description: "SPKL dan infrastruktur pengisian daya kendaraan listrik dari SONUS, didukung sistem panel surya dan sistem baterai untuk kebutuhan skala bisnis."
 ---
 SONUS menyediakan rangkaian lengkap sistem panel surya dan sistem baterai yang dirancang untuk memberikan solusi yang andal dan hemat biaya bagi kebutuhan residensial, komersial, maupun industri.
 

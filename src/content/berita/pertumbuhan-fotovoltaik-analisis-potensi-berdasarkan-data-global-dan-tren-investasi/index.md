@@ -1,10 +1,14 @@
 ---
 title: "Pertumbuhan Fotovoltaik: Analisis Potensi Berdasarkan Data Global dan Tren Investasi"
 pubDate: "2024-8-19"
-description: ""
+description: "Fotovoltaik baru menyumbang 1,5 persen listrik dunia. Analisis data produksi global, tren investasi, dan kebijakan yang menentukan pertumbuhannya."
 heroImage: "./image4.png"
 author: "Farros"
 authorUrl: "https://farros.co"
+heroImageAlt: "Ilustrasi bola dunia pada malam hari dengan garis cahaya yang menghubungkan antarbenua"
+seoTitle: "Pertumbuhan Fotovoltaik: Data Global dan Tren Investasi"
+focusKeyphrase: "pertumbuhan fotovoltaik global"
+tags: ["industri-pv", "investasi"]
 ---
 ## Pendahuluan
 
@@ -22,7 +26,7 @@ Melihat kelompok terbesar tanpa akses listrik, mayoritas berada di Afrika Sub-Sa
 
 Lalu, mengapa beberapa negara memiliki investasi fotovoltaik yang besar sementara negara lainnya jauh lebih sedikit, meskipun mereka sudah teraliri listrik? Jika kita melihat kebijakan fotovoltaik yang ada saat ini, kita bisa melihat bahwa sebagian besar negara di Eropa dan Asia memiliki kebijakan energi terbarukan nasional. Amerika Serikat dan Kanada memiliki sesuatu yang sedikit berbeda, yaitu persyaratan berbasis negara bagian, bukan federal. Beberapa negara baru mulai menambahkan kebijakan sekarang, namun perlu dicatat bahwa sebagian besar negara di Afrika serta Timur Tengah belum memiliki kebijakan energi terbarukan. Karena tidak adanya kebijakan energi terbarukan, hal ini menjelaskan mengapa mereka tidak mendorong investasi dalam instalasi energi terbarukan, termasuk fotovoltaik.
 
-Lalu, bagaimana kita bisa mulai membiayai semua tenaga surya ini mengingat adanya potensi besar? Meskipun ada potensi, biaya menjadi perhatian. Kabar baiknya adalah harga terus menurun secara eksponensial. Jika kita melihat harga pada tahun 1976, hampir mencapai $100 per watt. Namun hari ini, harganya mendekati $1 atau bahkan di bawah $1 per watt, yang sangat mengesankan. Namun, penurunan ini juga mulai melambat karena masih ada beberapa biaya tambahan seperti integrasi utilitas dan perizinan. Tetapi tetap saja, biaya terbesar dari pemasangan modul PV telah menurun secara signifikan.
+Lalu, bagaimana kita bisa mulai membiayai semua tenaga surya ini mengingat adanya potensi besar? Meskipun ada potensi, biaya menjadi perhatian. Kabar baiknya adalah harga terus menurun secara eksponensial. Jika kita melihat harga pada tahun 1976, hampir mencapai \$100 per watt. Namun hari ini, harganya mendekati \$1 atau bahkan di bawah \$1 per watt, yang sangat mengesankan. Namun, penurunan ini juga mulai melambat karena masih ada beberapa biaya tambahan seperti integrasi utilitas dan perizinan. Tetapi tetap saja, biaya terbesar dari pemasangan modul PV telah menurun secara signifikan.
 
 Ada banyak informasi yang bisa diperoleh tentang fotovoltaik, kebijakan, dan pasar, yang terus berubah. Jadi, sumber informasi apa yang tersedia? Ada beberapa sumber yang baik, baik dari kelompok non-komersial maupun pemerintah. Salah satunya adalah IEA atau International Energy Agency, yang secara rutin menerbitkan laporan tentang prospek berbagai sumber energi, termasuk fotovoltaik.
 

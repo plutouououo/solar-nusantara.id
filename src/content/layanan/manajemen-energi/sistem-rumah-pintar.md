@@ -1,6 +1,6 @@
 ---
-layout: ../../../layouts/Layout.astro
 title: "Sistem Rumah Pintar"
+description: "Sistem rumah pintar bertenaga surya dari SONUS: memangkas tagihan listrik rumah tangga sekaligus memantau dan mengatur konsumsi energi harian."
 ---
 
 ![alt text](_image-3.png)

@@ -1,10 +1,14 @@
 ---
-title: "Menghitung Ukuran Sistem PV: Optimalisasi Efisiensi Energi dari Nilai “Full Sun Hours"
+title: "Menghitung Ukuran Sistem PV: Optimalisasi Efisiensi Energi dari Nilai Full Sun Hours"
 pubDate: "2024-8-14"
-description: ""
+description: "Panduan menghitung ukuran sistem PV dari nilai Full Sun Hours, dengan contoh perhitungan beban 12.000 kWh per tahun dan efisiensi sistem 80 persen."
 heroImage: "./image1.png"
 author: "Farros"
 authorUrl: "https://farros.co"
+heroImageAlt: "Foto deretan panel surya menghadap matahari terik di langit biru cerah"
+seoTitle: "Menghitung Ukuran Sistem PV dari Full Sun Hours"
+focusKeyphrase: "menghitung ukuran sistem pv"
+tags: ["perhitungan", "desain-sistem"]
 ---
 
 ## Pendahuluan

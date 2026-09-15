@@ -4,6 +4,8 @@ pubDate: "2026-03-12"
 description: "Penjelasan cara kerja panel surya dari proses fotovoltaik hingga konversi listrik AC untuk kebutuhan operasional bisnis dan industri."
 heroImage: "./1.png"
 heroImageAlt: "AI Generated Image"
+focusKeyphrase: "cara kerja panel surya"
+tags: ["panel-surya", "bisnis"]
 ---
 
 Panel surya menghasilkan listrik melalui proses fotovoltaik, yaitu perubahan energi cahaya matahari menjadi listrik arus searah atau DC. Proses ini terjadi pada sel surya yang umumnya dibuat dari material semikonduktor silikon. Ketika cahaya matahari mengenai permukaan sel, energi foton memicu pelepasan elektron dan membentuk aliran listrik.

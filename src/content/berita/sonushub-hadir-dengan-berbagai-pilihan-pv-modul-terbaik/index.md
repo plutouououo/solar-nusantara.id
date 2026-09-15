@@ -1,8 +1,11 @@
 ---
 title: "SonusHUB Hadir dengan Berbagai Pilihan PV Modul Terbaik"
 pubDate: "2026-01-21"
-description: "SonusHUB memperluas layanannya dengan menyediakan berbagai pilihan modul fotovoltaik (PV) berkualitas tinggi untuk mendukung kebutuhan proyek energi surya Anda di seluruh Indonesia."
+description: "SonusHUB menyediakan berbagai pilihan modul fotovoltaik (PV) berkualitas untuk mendukung proyek energi surya Anda di seluruh Indonesia."
 heroImage: "./1.jpg"
+heroImageAlt: "Foto satu modul surya monokristalin berbingkai aluminium dengan latar putih"
+focusKeyphrase: "modul pv sonushub"
+tags: ["sonushub", "komponen"]
 ---
 
 ## SonusHUB: Solusi Kebutuhan Modul PV Anda

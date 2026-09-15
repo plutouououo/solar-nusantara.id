@@ -1,10 +1,13 @@
 ---
 title: "Sejarah Pertumbuhan PV – Bagian 1: Penemuan Efek Fotovoltaik"
 pubDate: "2024-8-15"
-description: ""
+description: "Menelusuri penemuan efek fotovoltaik sejak abad ke-19, prinsip kerja sel surya, dan bagaimana cahaya matahari diubah menjadi energi listrik."
 heroImage: "./image2.png"
 author: "Farros"
 authorUrl: "https://farros.co"
+heroImageAlt: "Ilustrasi tiga ilmuwan berjas laboratorium mengamati panel surya yang memantulkan cahaya"
+focusKeyphrase: "penemuan efek fotovoltaik"
+tags: ["sejarah", "fotovoltaik"]
 ---
 ## Pendahuluan
 
@@ -22,7 +25,7 @@ Penggunaan teknologi fotovoltaik mulai dipertimbangkan untuk produksi listrik di
 
 NASA, yang tumbuh dari program militer Angkatan Udara Amerika Serikat, menjadi yang pertama memanfaatkan teknologi fotovoltaik secara komersial. Pada tahun 1958, satelit Vanguard 1 diluncurkan sebagai proyek eksplorasi luar angkasa pertama yang menggunakan fotovoltaik sebagai sumber energinya. Ini menandai era baru dalam penggunaan energi matahari di luar angkasa, dan hingga awal 1970-an, lebih dari 1000 satelit bertenaga surya telah diluncurkan ke orbit.
 
-Meskipun fotovoltaik mulai berkembang pesat di luar angkasa, penggunaannya di bumi masih sangat terbatas. Hal ini disebabkan oleh biaya tinggi dari perangkat fotovoltaik pada masa itu, yang mencapai sekitar $100 per watt. Bandingkan dengan kondisi saat ini, di mana harga sel surya telah turun drastis menjadi kurang dari $2 per watt. Peningkatan efisiensi dan penurunan biaya ini adalah hasil dari perkembangan teknologi yang signifikan, yang akan kita bahas lebih lanjut nanti. Pada tahun 1970-an, harga mulai sedikit turun, memungkinkan fotovoltaik untuk digunakan di lokasi-lokasi terpencil, seperti perlintasan kereta api dan rambu jalan, di mana akses listrik dari jaringan utama tidak tersedia.
+Meskipun fotovoltaik mulai berkembang pesat di luar angkasa, penggunaannya di bumi masih sangat terbatas. Hal ini disebabkan oleh biaya tinggi dari perangkat fotovoltaik pada masa itu, yang mencapai sekitar \$100 per watt. Bandingkan dengan kondisi saat ini, di mana harga sel surya telah turun drastis menjadi kurang dari \$2 per watt. Peningkatan efisiensi dan penurunan biaya ini adalah hasil dari perkembangan teknologi yang signifikan, yang akan kita bahas lebih lanjut nanti. Pada tahun 1970-an, harga mulai sedikit turun, memungkinkan fotovoltaik untuk digunakan di lokasi-lokasi terpencil, seperti perlintasan kereta api dan rambu jalan, di mana akses listrik dari jaringan utama tidak tersedia.
 
 Perhatian lebih besar terhadap energi alternatif, termasuk fotovoltaik, mulai muncul pada akhir tahun 1970-an sebagai respons terhadap krisis minyak yang melanda Amerika Serikat. Krisis ini mendorong penelitian lebih lanjut dan peningkatan kesadaran akan pentingnya diversifikasi sumber energi. Pada tahun 1979, Presiden Jimmy Carter bahkan memerintahkan pemasangan panel fotovoltaik di atap Gedung Putih sebagai simbol komitmen terhadap energi alternatif. Meski panel-panel ini sempat dilepas beberapa tahun kemudian, mereka telah dipasang kembali baru-baru ini, mencerminkan keberlanjutan upaya untuk mengeksplorasi dan memanfaatkan energi surya sebagai bagian dari strategi energi nasional.
 

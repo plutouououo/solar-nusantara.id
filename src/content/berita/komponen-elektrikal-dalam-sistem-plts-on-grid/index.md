@@ -6,6 +6,8 @@ heroImage: "./1.webp"
 heroImageAlt: "AI Generated Image"
 author: "Farros"
 authorUrl: "https://farros.co"
+focusKeyphrase: "komponen plts on grid"
+tags: ["plts", "komponen"]
 ---
 
 Sistem **Pembangkit Listrik Tenaga Surya (PLTS)** tidak hanya terdiri dari panel surya. Dalam praktiknya, sebuah sistem photovoltaic (PV) terdiri dari berbagai komponen elektrikal yang bekerja bersama untuk mengubah energi matahari menjadi listrik yang dapat digunakan oleh bangunan atau disalurkan ke jaringan listrik.

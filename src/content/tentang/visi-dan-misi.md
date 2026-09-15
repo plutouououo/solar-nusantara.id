@@ -1,6 +1,6 @@
 ---
-layout: ../../layouts/Layout.astro
 title: "Visi dan Misi"
+description: "Visi dan misi Solar Nusantara: menjadi perusahaan terdepan dalam transisi menuju Energi Baru Indonesia sampai ke utilitas terakhir."
 ---
 
 ![alt text](_image.png)

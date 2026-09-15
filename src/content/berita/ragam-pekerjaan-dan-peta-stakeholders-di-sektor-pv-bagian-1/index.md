@@ -1,10 +1,14 @@
 ---
 title: "Ragam Pekerjaan dan Peta Stakeholders di Sektor PV | Bagian 1"
 pubDate: "2024-9-23"
-description: "Peran Penelitian, Organisasi Standar, & Produsen"
+description: "Peta stakeholders sektor PV bagian 1: kolaborasi akademisi, organisasi standar nasional, dan produsen dalam mendorong inovasi fotovoltaik di Indonesia."
 heroImage: "./image6.png"
 author: "Farros"
 authorUrl: "https://farros.co"
+heroImageAlt: "Foto dua teknisi bertopi keselamatan memeriksa catatan di atap lokasi pemasangan PLTS"
+seoTitle: "Peta Stakeholders Sektor PV Bagian 1: Penelitian"
+focusKeyphrase: "stakeholder industri pv indonesia"
+tags: ["industri-pv", "karier"]
 ---
 ## Pendahuluan
 

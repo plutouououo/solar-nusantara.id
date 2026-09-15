@@ -3,6 +3,10 @@ title: "Apa Itu SonusHUB? Platform Terpadu untuk Kebutuhan Energi Surya Anda"
 pubDate: "2026-01-20"
 description: "Mengenal SonusHUB, platform B2B dan B2G yang menyediakan semua kebutuhan material dan komponen untuk proyek energi surya di Indonesia."
 heroImage: "./1.jpg"
+heroImageAlt: "Kartu judul artikel Apa itu SonusHUB dengan logo Solar Nusantara dan logo SonusHUB berwarna biru"
+seoTitle: "Apa Itu SonusHUB? Platform Energi Surya B2B dan B2G"
+focusKeyphrase: "apa itu sonushub"
+tags: ["sonushub", "platform-b2b"]
 ---
 
 ## Memperkenalkan SonusHUB: Solusi Satu Pintu untuk Industri Fotovoltaik

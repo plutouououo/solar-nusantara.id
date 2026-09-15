@@ -1,6 +1,6 @@
 ---
-layout: ../../../layouts/Layout.astro
 title: "Kebijakan Pencegahan Terjatuh"
+description: "Pedoman pencegahan jatuh PT Tripower Solar Nusantara untuk konstruksi, instalasi, dan pemeliharaan PLTS, mengacu pada standar OSHA dan aturan nasional."
 ---
 
 PT Tripower Solar Nusantara mengeluarkan kebijakan ini sebagai pedoman dan prosedur dalam mencegah kecelakaan dan cedera akibat jatuh selama kegiatan konstruksi, instalasi, dan pemeliharaan pada proyek pembangkit listrik tenaga surya. Kebijakan ini bertujuan untuk melindungi seluruh karyawan, kontraktor, dan subkontraktor dengan memastikan kepatuhan terhadap peraturan keselamatan yang berlaku serta praktik terbaik di industri.  

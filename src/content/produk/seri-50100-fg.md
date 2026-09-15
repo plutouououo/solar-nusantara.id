@@ -1,6 +1,6 @@
 ---
-  layout: ../../layouts/Layout.astro
   title: 'Seri 50100 FG'
+  description: "Seri 50100 FG adalah pembangkit listrik tenaga surya berbentuk kontainer yang portabel, tanpa bahan bakar, untuk lokasi terpencil dan daya cadangan."
 ---
 ![alt text](_image.png)
 Jika Anda adalah seseorang yang gemar menghabiskan waktu di daerah terpencil—entah itu untuk berkemah, mendaki, atau bahkan hidup mandiri di luar jaringan listrik—Anda pasti tahu betapa pentingnya memiliki sumber daya listrik yang andal. Di sinilah 50100 FG Series berperan. Produk luar biasa ini merupakan pembangkit listrik berbentuk kontainer yang memanfaatkan energi surya untuk menyediakan listrik di mana pun Anda membutuhkannya.

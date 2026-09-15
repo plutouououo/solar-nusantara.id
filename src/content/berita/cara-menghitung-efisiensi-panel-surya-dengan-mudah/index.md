@@ -5,6 +5,9 @@ description: "Pelajari cara menghitung efisiensi panel surya dengan rumus sederh
 heroImage: "./1.png"
 author: "Farros"
 authorUrl: "https://farros.co"
+heroImageAlt: "Ilustrasi satu panel surya biru di atas rangka penyangga logam"
+focusKeyphrase: "cara menghitung efisiensi panel surya"
+tags: ["perhitungan", "panel-surya"]
 ---
 
 Dalam beberapa tahun terakhir, instalasi **panel surya (photovoltaic / PV)** semakin banyak digunakan oleh perusahaan, industri, dan pengembang properti. Selain membantu menekan biaya listrik jangka panjang, sistem PV juga menjadi bagian dari strategi **transisi energi dan ESG perusahaan**.

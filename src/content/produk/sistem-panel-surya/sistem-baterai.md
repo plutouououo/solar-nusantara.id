@@ -1,6 +1,6 @@
 ---
-layout: ../../../layouts/Layout.astro
 title: "Sistem Baterai"
+description: "Sistem baterai SONUS menyimpan daya dari panel surya untuk kebutuhan residensial, komersial, dan industri, dipadukan dengan sistem pemasangan lengkap."
 ---
 ![alt text](_image-2.png)
 SONUS menyediakan rangkaian lengkap sistem panel surya dan sistem baterai yang dirancang untuk memberikan solusi yang andal dan hemat biaya bagi kebutuhan residensial, komersial, maupun industri.

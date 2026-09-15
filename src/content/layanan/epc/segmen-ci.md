@@ -1,6 +1,6 @@
 ---
-layout: ../../../layouts/Layout.astro
 title: "Segmen C & I"
+description: "Layanan EPC PLTS SONUS untuk segmen komersial dan industri: rancang bangun, pengadaan, dan konstruksi sistem tenaga surya skala bisnis."
 ---
 
 <div class="slider-with-nav">

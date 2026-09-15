@@ -1,6 +1,6 @@
 ---
-layout: ../../../layouts/Layout.astro
 title: "SRF"
+description: "Solid Recovered Fuel (SRF) dari limbah non-daur ulang: bahan bakar berjejak karbon rendah yang mengalihkan sampah dari tempat pembuangan akhir."
 ---
 ![alt text](_image-4.png)
 > Solid Recovered Fuel: Sumber Energi yang Lebih Bersih dan Berkelanjutan

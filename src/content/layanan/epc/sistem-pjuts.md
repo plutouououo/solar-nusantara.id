@@ -1,6 +1,6 @@
 ---
-layout: ../../../layouts/Layout.astro
 title: "Sistem PJUTS"
+description: "Sistem PJUTS dari SONUS: penerangan jalan umum bertenaga surya yang hemat biaya operasional dan dapat dipasang tanpa jaringan listrik."
 ---
 
 <div class="slider-with-nav">

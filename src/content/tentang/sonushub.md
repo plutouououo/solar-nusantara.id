@@ -1,6 +1,6 @@
 ---
-layout: ../../layouts/Layout.astro
 title: "Tentang SonusHUB"
+description: "SonusHUB adalah platform terpadu Solar Nusantara yang menghubungkan pemangku kepentingan energi terbarukan dan menyediakan material proyek surya."
 ---
 
 ## Selamat Datang di SonusHUB

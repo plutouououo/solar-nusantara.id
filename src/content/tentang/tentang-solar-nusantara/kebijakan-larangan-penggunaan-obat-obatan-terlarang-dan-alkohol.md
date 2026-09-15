@@ -1,6 +1,6 @@
 ---
-layout: ../../../layouts/Layout.astro
 title: "Kebijakan Larangan Penggunaan Obat-obatan Terlarang dan Alkohol"
+description: "Kebijakan PT Tripower Solar Nusantara yang melarang konsumsi, kepemilikan, dan peredaran minuman keras serta obat-obatan terlarang di lokasi kerja."
 ---
 
 - Penggunaan alkohol dan obat-obatan meningkatkan resiko terhadap kecelakaan. Pengunaan minuman keras dan obat-obatan tidak diijinkan terhadap seluruh karyawan kapan saja dan pada kondisi apapun. (kecuali untuk keperluan medis sesuai resep dokter)

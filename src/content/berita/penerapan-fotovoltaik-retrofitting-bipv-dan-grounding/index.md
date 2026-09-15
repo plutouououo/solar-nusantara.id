@@ -1,10 +1,13 @@
 ---
 title: "Penerapan Fotovoltaik: Retrofitting, BIPV, dan Grounding"
 pubDate: "2024-8-21"
-description: ""
+description: "Tiga cara menerapkan fotovoltaik: retrofitting pada bangunan lama, BIPV pada konstruksi baru, dan sistem berbasis tanah, plus pilihan on-grid dan off-grid."
 heroImage: "./image5.png"
 author: "Farros"
 authorUrl: "https://farros.co"
+heroImageAlt: "Foto udara deretan panel surya berbasis tanah yang dipasang di atas lahan berumput"
+focusKeyphrase: "bipv dan retrofitting fotovoltaik"
+tags: ["fotovoltaik", "desain-sistem"]
 ---
 ## Pendahuluan
 

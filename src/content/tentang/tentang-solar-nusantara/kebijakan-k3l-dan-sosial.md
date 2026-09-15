@@ -1,6 +1,6 @@
 ---
-layout: ../../../layouts/Layout.astro
 title: "Kebijakan K3L dan Sosial"
+description: "Kebijakan K3L dan sosial PT Tripower Solar Nusantara yang mengikat manajemen, karyawan, mitra kerja, subkontraktor, dan pemasok di seluruh operasi."
 ---
 Dalam menjalankan Bisnis dan Operasional Perusahaan, Kami berkomitmen untuk melindungi kelestarian lingkungan serta keselamatan dan kesehatan karyawan, mitra kerja, subkontraktor, pemasok dan masyarakat. Prinsip-prinsip utama ini mengikat dan berlaku untuk seluruh manajemen dan semua karyawan, mitra kerja, subkontraktor, pemasok di semua tingkatan.
 

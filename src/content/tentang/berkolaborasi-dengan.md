@@ -1,6 +1,6 @@
 ---
-layout: ../../layouts/Layout.astro
 title: "Berkolaborasi dengan"
+description: "Jaringan kolaborasi SONUS berdiri di atas dua pilar: mitra bisnis dari produsen sampai distributor teknologi, dan mitra pemasok material energi surya."
 ---
 
 Di SONUS, kami percaya bahwa kolaborasi adalah pilar utama kesuksesan kami dalam menghadirkan solusi energi berkelanjutan. Keberhasilan kami tidak hanya dibangun di atas inovasi internal, tetapi juga melalui kemitraan yang kuat dan saling menguntungkan dengan berbagai pihak yang memiliki visi yang sama untuk masa depan yang lebih hijau.

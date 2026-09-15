@@ -1,10 +1,14 @@
 ---
 title: "Sejarah Pertumbuhan PV – Bagian 2: Evolusi dan Perkembangan Industri Fotovoltaik"
 pubDate: "2024-8-19"
-description: ""
+description: "Dari kalkulator bertenaga surya pada 1980-an hingga ladang surya skala utilitas: evolusi industri fotovoltaik dan penurunan tajam biaya manufaktur."
 heroImage: "./image3.png"
 author: "Farros"
 authorUrl: "https://farros.co"
+heroImageAlt: "Foto teknisi bertopi keselamatan mengangkut satu modul surya di dalam gudang"
+seoTitle: "Sejarah PV Bagian 2: Evolusi Industri Fotovoltaik"
+focusKeyphrase: "sejarah industri fotovoltaik"
+tags: ["sejarah", "industri-pv"]
 ---
 ## Pendahuluan
 

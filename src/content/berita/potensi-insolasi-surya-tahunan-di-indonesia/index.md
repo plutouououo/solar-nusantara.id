@@ -6,6 +6,8 @@ heroImage: "./1.png"
 heroImageAlt: "AI Generated Image"
 author: "Farros"
 authorUrl: "https://farros.co"
+focusKeyphrase: "insolasi surya indonesia"
+tags: ["indonesia", "perhitungan"]
 ---
 
 Indonesia berada di wilayah khatulistiwa sehingga menerima radiasi matahari relatif stabil sepanjang tahun. Kondisi ini membuat energi surya menjadi salah satu sumber energi terbarukan yang memiliki potensi besar untuk pengembangan pembangkit listrik tenaga surya (PLTS).

@@ -1,6 +1,6 @@
 ---
-layout: ../../layouts/Layout.astro
 title: "Sistem Tenaga Surya EPC"
+description: "Layanan EPC sistem tenaga surya SONUS mencakup tiga segmen: komersial dan industri, Solar Home System, serta PJUTS, dari rancangan sampai konstruksi."
 ---
 Selamat datang di layanan Engineering, Procurement, and Construction (EPC) Sistem Tenaga Surya dari SONUS. Kami berdedikasi untuk menyediakan solusi energi bersih yang disesuaikan dengan kebutuhan spesifik Anda, baik untuk skala besar maupun kecil.
 
